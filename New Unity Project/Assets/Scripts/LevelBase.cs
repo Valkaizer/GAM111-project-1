@@ -22,6 +22,7 @@ public class LevelBase : MonoBehaviour {
         BaseClamp();
     }
 
+    // Rotate the level
     void BaseRotation()
     {
         if (Input.GetKey("w"))
@@ -45,6 +46,7 @@ public class LevelBase : MonoBehaviour {
         }
     }
 
+    // Make sur the level doesn't rotte too far
     void BaseClamp()
     {       
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, 0, transform.eulerAngles.z);
